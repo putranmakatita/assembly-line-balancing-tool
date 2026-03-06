@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Line Balancing Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Assembly Line Balancing Tool</h1>
+
+        <label>Cycle Time</label>
+        <input id="cycleTime" type="number" value="40">
+
+        <table id="taskTable">
+
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Time</th>
+                    <th>Predecessor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><input value="A"></td>
+                    <td><input value="20"></td>
+                    <td><input></td>
+                </tr>
+
+                <tr>
+                    <td><input value="B"></td>
+                    <td><input value="15"></td>
+                    <td><input value="A"></td>
+                </tr>
+
+                <tr>
+                    <td><input value="C"></td>
+                    <td><input value="10"></td>
+                    <td><input value="A"></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <button onclick="addRow()">Add Task</button>
+        <button onclick="calculate()">Calculate</button>
+
+        <h3>Results</h3>
+        <div id="results"></div>
+
+        <h3>Stations (OPC Visualization)</h3>
+        <div id="opc"></div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+    <footer class="copyright">
+        © 2026 Copyright Reserved — Putra N. Makatita
+    </footer>
+</body>
+
+</html>
